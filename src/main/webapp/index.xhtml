@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="jakarta.faces.html"
+>
+<h:head>
+    <title>Minimal test</title>
+</h:head>
+<h:body>
+    <h:form id="form1">
+        <h:commandScript id="jsFunction"
+                         name="jsFunction"
+                         actionListener="#{commandScriptBean.commandScript}"
+        />
+        <script>
+            function testFunction() {
+                console.log("testFunction");
+                jsFunction({"test": "value"});
+            }
+        </script>
+        This is a form<br/>
+        <h:commandButton id="button" onclick="testFunction(); return false;" value="#{commandScriptBean.buttonName}"/>
+    </h:form>
+</h:body>
+</html>
