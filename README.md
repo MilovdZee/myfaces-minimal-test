@@ -9,6 +9,8 @@ mvn jetty:run
 Then the service is available on: http://localhost:8080/index.xhtml
 
 # Examples of issues
+The examples in the root folder are with the most recent myfaces version based on jakarta an named beans. For reference there also is a folder with a myfaces 2.3.11 implementation of the same examples that behave differently.
+
 ## h:commandScript not passing arguments to bean 
 - https://issues.apache.org/jira/browse/MYFACES-4710
 - https://stackoverflow.com/questions/79452661/is-myfaces-4-0-2-hcommandscript-still-supposed-to-function
