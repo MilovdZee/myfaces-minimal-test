@@ -18,7 +18,11 @@
             }
         </script>
         This is a form<br/>
-        <h:commandButton id="button" onclick="testFunction(); return false;" value="#{commandScriptBean.buttonName}"/>
+        <h:commandButton id="button1" onclick="testFunction(); return false;" value="#{commandScriptBean.buttonName}"/>
+
+        <p></p>
+        Switch to page 1:<br/>
+        <h:commandLink id="button2" value="to page 1" action="#{pageSwitcherBean.toPage1()}"/>
     </h:form>
 </h:body>
 </html>
