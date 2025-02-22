@@ -5,23 +5,22 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.minimaltests</groupId>
-    <artifactId>myfaces-minimal-tests</artifactId>
+    <artifactId>myfaces-minimal-tests_2_3_x</artifactId>
     <version>1.0-SNAPSHOT</version>
-    <name>myfaces-minimal-tests</name>
+    <name>myfaces-minimal-tests_2_3_x</name>
     <packaging>war</packaging>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <maven.compiler.target>17</maven.compiler.target>
-        <maven.compiler.source>17</maven.compiler.source>
+        <maven.compiler.target>11</maven.compiler.target>
+        <maven.compiler.source>11</maven.compiler.source>
 
-        <myfaces.version>4.0.2</myfaces.version>
-        <weld-servlet-core.version>5.1.3.Final</weld-servlet-core.version>
+        <myfaces.version>2.3.11</myfaces.version>
         <log4j-core.version>2.24.3</log4j-core.version>
         <lombok.version>1.18.36</lombok.version>
 
         <maven-compiler-plugin.version>3.13.0</maven-compiler-plugin.version>
-        <jetty-maven-plugin.version>11.0.24</jetty-maven-plugin.version>
+        <jetty-maven-plugin.version>9.4.57.v20241219</jetty-maven-plugin.version>
     </properties>
 
     <dependencies>
@@ -37,6 +36,12 @@
         </dependency>
 
         <dependency>
+            <groupId>jakarta.xml.bind</groupId>
+            <artifactId>jakarta.xml.bind-api</artifactId>
+            <version>2.3.2</version>
+        </dependency>
+
+        <dependency>
             <groupId>org.apache.myfaces.core</groupId>
             <artifactId>myfaces-api</artifactId>
             <version>${myfaces.version}</version>
@@ -45,12 +50,6 @@
             <groupId>org.apache.myfaces.core</groupId>
             <artifactId>myfaces-impl</artifactId>
             <version>${myfaces.version}</version>
-        </dependency>
-
-        <dependency>
-            <groupId>org.jboss.weld.servlet</groupId>
-            <artifactId>weld-servlet-core</artifactId>
-            <version>${weld-servlet-core.version}</version>
         </dependency>
     </dependencies>
 
